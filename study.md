@@ -104,7 +104,7 @@ Gradle은 의존관계가 있는 라이브러리를 함께 다운로드 한다.
     @Bean
     public MemberRepository memberRepository() {
         return new MemoryMemberRepository();
-    }
+        }
     }
     ```
 + '@Autowired'를 통한 DI는 'helloController', 'MemberService' 등과 같이 스프링이 관리하는 객체에서만 동작한다. 스프링 빈으로 등록하지 않고 내가 직접 생성한 객체에서는 동작하지 않는다.
